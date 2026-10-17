@@ -1,0 +1,199 @@
+comment_id,text,intent,topic,sentiment
+syn-0001,هل كلمة ميزان فصيحة وما أصلها في اللغة,SUGGESTION,GENERAL,NEUTRAL
+syn-0002,هل كلمة سوار فصيحة وما أصلها في اللغة,INQUIRY,GENERAL,NEUTRAL
+syn-0003,أقترح إضافة خاصية البحث بحسب الجذر لتسهيل الوصول إلى الكلمات,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0004,تعرّفوا على أفضل خدمات الاستضافة الرخيصة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0005,جزاكم الله خيرًا على سهولة البحث وجودة الشروح,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0006,هل يمكن إضافة قائمة بالكلمات المرتبطة بكل مادة,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0007,الصفحة لا تفتح من الهاتف وتظهر رسالة خطأ عند البحث عن ميزان,COMPLAINT,TECHNICAL_ISSUE,NEUTRAL
+syn-0008,المعنى المذكور لكلمة حديقة غير دقيق وأرجو مراجعته,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0009,أرشح كلمة رحلة لتكون كلمة العام لأنها تعبّر عن المرحلة,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0010,أقترح إضافة خاصية البحث بحسب الجذر لتسهيل الوصول إلى الكلمات,SUGGESTION,DICTIONARY_SUGGESTION,NEGATIVE
+syn-0011,رابط الصوت لا يعمل عندي في صفحة كلمة نافذة,SUGGESTION,TECHNICAL_ISSUE,NEGATIVE
+syn-0012,رابط الصوت لا يعمل عندي في صفحة كلمة مدينة,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0013,الصفحة لا تفتح من الهاتف وتظهر رسالة خطأ عند البحث عن غيمة,THANKS_PRAISE,TECHNICAL_ISSUE,NEGATIVE
+syn-0014,جزاكم الله خيرًا على سهولة البحث وجودة الشروح,SPAM,GENERAL,POSITIVE
+syn-0015,أقترح إضافة خاصية البحث بحسب الجذر لتسهيل الوصول إلى الكلمات,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0016,رابط الصوت لا يعمل عندي في صفحة كلمة رحلة,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0017,ترشيحي لكلمة العام هو كلمة كتاب,SPAM,WORD_OF_YEAR_NOMINATION,NEUTRAL
+syn-0018,اشتروا منتجاتنا الآن بأسعار مخفضة وعروض حصرية,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0019,تعرّفوا على أفضل خدمات الاستضافة الرخيصة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0020,اشتروا منتجاتنا الآن بأسعار مخفضة وعروض حصرية,SPAM,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0021,أتمنى إضافة أمثلة تطبيقية أكثر لكل مادة في المعجم,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0022,أبحث عن وظيفة مناسبة، هل لديكم فرص شاغرة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0023,أرشح كلمة سوار لتكون كلمة العام لأنها تعبّر عن المرحلة,SPAM,WORD_OF_YEAR_NOMINATION,NEUTRAL
+syn-0024,ترشيحي لكلمة العام هو كلمة رحلة,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0025,الشرح الموجود لكلمة رحلة ناقص ولا يغطي المعنى الشائع,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0026,تعرّفوا على أفضل خدمات الاستضافة الرخيصة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0027,جزاكم الله خيرًا على سهولة البحث وجودة الشروح,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0028,أقترح إضافة خاصية البحث بحسب الجذر لتسهيل الوصول إلى الكلمات,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0029,اشتروا منتجاتنا الآن بأسعار مخفضة وعروض حصرية,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0030,تعرّفوا على أفضل خدمات الاستضافة الرخيصة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0031,ما الفرق بين كلمة حديقة وكلمة قريبة منها في المعنى,INQUIRY,ENTRY_CORRECTION,NEUTRAL
+syn-0032,رابط الصوت لا يعمل عندي في صفحة كلمة غيمة,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0033,الشرح الموجود لكلمة غيمة ناقص ولا يغطي المعنى الشائع,INQUIRY,ENTRY_CORRECTION,NEGATIVE
+syn-0034,أقترح إضافة كلمة غيمة إلى المعجم لأنها شائعة بين الناس,SUGGESTION,WORD_SUBMISSION,NEUTRAL
+syn-0035,عمل رائع ومفيد جدًا، بارك الله فيكم,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0036,أبحث عن وظيفة مناسبة، هل لديكم فرص شاغرة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0037,ما معنى كلمة سوار وكيف تُنطق بالشكل الصحيح,INQUIRY,GENERAL,NEUTRAL
+syn-0038,أقترح إضافة كلمة جسر إلى المعجم لأنها شائعة بين الناس,SUGGESTION,WORD_SUBMISSION,NEUTRAL
+syn-0039,هل كلمة كتاب فصيحة وما أصلها في اللغة,INQUIRY,GENERAL,NEUTRAL
+syn-0040,المعنى المذكور لكلمة نافذة غير دقيق وأرجو مراجعته,COMPLAINT,WORD_SUBMISSION,NEGATIVE
+syn-0041,المعنى المذكور لكلمة كتاب غير دقيق وأرجو مراجعته,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0042,وجدت خطأً إملائيًا في المثال الوارد في مادة ميزان,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0043,هل يمكن إضافة قائمة بالكلمات المرتبطة بكل مادة,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0044,أتمنى إضافة أمثلة تطبيقية أكثر لكل مادة في المعجم,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0045,الصفحة لا تفتح من الهاتف وتظهر رسالة خطأ عند البحث عن طريق,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0046,شكرًا لكم على هذا المعجم المفيد وعلى جهودكم الواضحة,THANKS_PRAISE,ENTRY_CORRECTION,POSITIVE
+syn-0047,أتمنى إضافة أمثلة تطبيقية أكثر لكل مادة في المعجم,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0048,أتمنى إضافة أمثلة تطبيقية أكثر لكل مادة في المعجم,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0049,المعنى المذكور لكلمة طريق غير دقيق وأرجو مراجعته,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0050,أرشح كلمة حديقة لتكون كلمة العام لأنها تعبّر عن المرحلة,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0051,الصفحة لا تفتح من الهاتف وتظهر رسالة خطأ عند البحث عن ميزان,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0052,هل يمكن إضافة قائمة بالكلمات المرتبطة بكل مادة,SUGGESTION,GENERAL,NEUTRAL
+syn-0053,الشرح الموجود لكلمة نافذة ناقص ولا يغطي المعنى الشائع,COMPLAINT,GENERAL,NEGATIVE
+syn-0054,أرشح كلمة رحلة لتكون كلمة العام لأنها تعبّر عن المرحلة,THANKS_PRAISE,WORD_OF_YEAR_NOMINATION,NEUTRAL
+syn-0055,أقترح إضافة كلمة جسر إلى المعجم لأنها شائعة بين الناس,SUGGESTION,WORD_SUBMISSION,NEUTRAL
+syn-0056,الشرح الموجود لكلمة غيمة ناقص ولا يغطي المعنى الشائع,COMPLAINT,WORD_SUBMISSION,NEGATIVE
+syn-0057,شكرًا لكم على هذا المعجم المفيد وعلى جهودكم الواضحة,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0058,ما معنى كلمة رحلة وكيف تُنطق بالشكل الصحيح,INQUIRY,GENERAL,NEUTRAL
+syn-0059,ترشيحي لكلمة العام هو كلمة كتاب,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0060,المعنى المذكور لكلمة حديقة غير دقيق وأرجو مراجعته,COMPLAINT,ENTRY_CORRECTION,POSITIVE
+syn-0061,أرجو النظر في إضافة كلمة ضياء بمعناها المتداول,THANKS_PRAISE,GENERAL,NEUTRAL
+syn-0062,شكرًا لكم على هذا المعجم المفيد وعلى جهودكم الواضحة,THANKS_PRAISE,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0063,هل كلمة طريق فصيحة وما أصلها في اللغة,INQUIRY,GENERAL,NEUTRAL
+syn-0064,أتمنى إضافة أمثلة تطبيقية أكثر لكل مادة في المعجم,SPAM,DICTIONARY_SUGGESTION,POSITIVE
+syn-0065,الموقع بطيء جدًا ويتوقف عند فتح نتائج البحث,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0066,الشرح الموجود لكلمة كتاب ناقص ولا يغطي المعنى الشائع,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0067,أبحث عن وظيفة مناسبة، هل لديكم فرص شاغرة,SPAM,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0068,الموقع بطيء جدًا ويتوقف عند فتح نتائج البحث,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0069,شكرًا لكم على هذا المعجم المفيد وعلى جهودكم الواضحة,THANKS_PRAISE,DICTIONARY_SUGGESTION,POSITIVE
+syn-0070,هل يمكن إضافة قائمة بالكلمات المرتبطة بكل مادة,SUGGESTION,DICTIONARY_SUGGESTION,NEGATIVE
+syn-0071,ترشيحي لكلمة العام هو كلمة طريق,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0072,أرشح كلمة ضياء لتكون كلمة العام لأنها تعبّر عن المرحلة,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0073,تعرّفوا على أفضل خدمات الاستضافة الرخيصة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0074,أقترح إضافة كلمة مدينة إلى المعجم لأنها شائعة بين الناس,SUGGESTION,WORD_SUBMISSION,NEGATIVE
+syn-0075,شكرًا لكم على هذا المعجم المفيد وعلى جهودكم الواضحة,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0076,تعرّفوا على أفضل خدمات الاستضافة الرخيصة,SPAM,WORD_SUBMISSION,NEUTRAL
+syn-0077,أتمنى إضافة أمثلة تطبيقية أكثر لكل مادة في المعجم,SUGGESTION,ENTRY_CORRECTION,NEUTRAL
+syn-0078,رابط الصوت لا يعمل عندي في صفحة كلمة سوار,THANKS_PRAISE,TECHNICAL_ISSUE,NEGATIVE
+syn-0079,أرجو النظر في إضافة كلمة ميزان بمعناها المتداول,SUGGESTION,WORD_SUBMISSION,NEUTRAL
+syn-0080,أبحث عن وظيفة مناسبة، هل لديكم فرص شاغرة,SUGGESTION,TECHNICAL_ISSUE,NEUTRAL
+syn-0081,أقترح إضافة خاصية البحث بحسب الجذر لتسهيل الوصول إلى الكلمات,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0082,عمل رائع ومفيد جدًا، بارك الله فيكم,SPAM,ENTRY_CORRECTION,POSITIVE
+syn-0083,جزاكم الله خيرًا على سهولة البحث وجودة الشروح,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0084,اشتروا منتجاتنا الآن بأسعار مخفضة وعروض حصرية,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0085,أرجو النظر في إضافة كلمة ميزان بمعناها المتداول,SUGGESTION,TECHNICAL_ISSUE,NEUTRAL
+syn-0086,أرشح كلمة رحلة لتكون كلمة العام لأنها تعبّر عن المرحلة,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0087,أقترح إضافة كلمة جسر إلى المعجم لأنها شائعة بين الناس,SUGGESTION,WORD_SUBMISSION,NEUTRAL
+syn-0088,أقترح إضافة خاصية البحث بحسب الجذر لتسهيل الوصول إلى الكلمات,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0089,ما الفرق بين كلمة كتاب وكلمة قريبة منها في المعنى,INQUIRY,GENERAL,NEUTRAL
+syn-0090,ترشيحي لكلمة العام هو كلمة نافذة,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0091,هل يمكن إضافة قائمة بالكلمات المرتبطة بكل مادة,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0092,شكرًا لكم على هذا المعجم المفيد وعلى جهودكم الواضحة,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0093,المعنى المذكور لكلمة غيمة غير دقيق وأرجو مراجعته,INQUIRY,OFF_TOPIC_PERSONAL,NEGATIVE
+syn-0094,وجدت خطأً إملائيًا في المثال الوارد في مادة جسر,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0095,ما الفرق بين كلمة ميزان وكلمة قريبة منها في المعنى,INQUIRY,TECHNICAL_ISSUE,NEUTRAL
+syn-0096,ما الفرق بين كلمة رحلة وكلمة قريبة منها في المعنى,INQUIRY,GENERAL,NEUTRAL
+syn-0097,أقترح إضافة كلمة مدينة إلى المعجم لأنها شائعة بين الناس,SUGGESTION,WORD_SUBMISSION,NEUTRAL
+syn-0098,ما معنى كلمة ميزان وكيف تُنطق بالشكل الصحيح,INQUIRY,GENERAL,NEUTRAL
+syn-0099,هل كلمة سوار فصيحة وما أصلها في اللغة,INQUIRY,WORD_SUBMISSION,POSITIVE
+syn-0100,أرجو النظر في إضافة كلمة جسر بمعناها المتداول,SUGGESTION,WORD_SUBMISSION,NEUTRAL
+syn-0101,عمل رائع ومفيد جدًا، بارك الله فيكم,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0102,ما معنى كلمة مدينة وكيف تُنطق بالشكل الصحيح,INQUIRY,GENERAL,NEUTRAL
+syn-0103,أقترح إضافة خاصية البحث بحسب الجذر لتسهيل الوصول إلى الكلمات,SUGGESTION,WORD_OF_YEAR_NOMINATION,NEUTRAL
+syn-0104,الموقع بطيء جدًا ويتوقف عند فتح نتائج البحث,SUGGESTION,TECHNICAL_ISSUE,POSITIVE
+syn-0105,رابط الصوت لا يعمل عندي في صفحة كلمة رحلة,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0106,تعرّفوا على أفضل خدمات الاستضافة الرخيصة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0107,أبحث عن وظيفة مناسبة، هل لديكم فرص شاغرة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0108,هل يمكن إضافة قائمة بالكلمات المرتبطة بكل مادة,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0109,ما معنى كلمة جسر وكيف تُنطق بالشكل الصحيح,INQUIRY,GENERAL,NEUTRAL
+syn-0110,هل كلمة ميزان فصيحة وما أصلها في اللغة,INQUIRY,GENERAL,POSITIVE
+syn-0111,أتمنى إضافة أمثلة تطبيقية أكثر لكل مادة في المعجم,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0112,أرجو النظر في إضافة كلمة ميزان بمعناها المتداول,SUGGESTION,TECHNICAL_ISSUE,NEGATIVE
+syn-0113,أرجو النظر في إضافة كلمة جسر بمعناها المتداول,SPAM,WORD_SUBMISSION,NEUTRAL
+syn-0114,الصفحة لا تفتح من الهاتف وتظهر رسالة خطأ عند البحث عن حديقة,COMPLAINT,TECHNICAL_ISSUE,NEUTRAL
+syn-0115,اشتروا منتجاتنا الآن بأسعار مخفضة وعروض حصرية,SUGGESTION,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0116,شكرًا لكم على هذا المعجم المفيد وعلى جهودكم الواضحة,INQUIRY,GENERAL,NEGATIVE
+syn-0117,تعرّفوا على أفضل خدمات الاستضافة الرخيصة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0118,رابط الصوت لا يعمل عندي في صفحة كلمة ميزان,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0119,ما الفرق بين كلمة رحلة وكلمة قريبة منها في المعنى,INQUIRY,GENERAL,NEUTRAL
+syn-0120,شكرًا لكم على هذا المعجم المفيد وعلى جهودكم الواضحة,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0121,الصفحة لا تفتح من الهاتف وتظهر رسالة خطأ عند البحث عن ضياء,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0122,أبحث عن وظيفة مناسبة، هل لديكم فرص شاغرة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0123,الشرح الموجود لكلمة كتاب ناقص ولا يغطي المعنى الشائع,SPAM,WORD_SUBMISSION,NEGATIVE
+syn-0124,أتمنى إضافة أمثلة تطبيقية أكثر لكل مادة في المعجم,COMPLAINT,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0125,الشرح الموجود لكلمة ميزان ناقص ولا يغطي المعنى الشائع,SPAM,GENERAL,POSITIVE
+syn-0126,أقترح إضافة خاصية البحث بحسب الجذر لتسهيل الوصول إلى الكلمات,THANKS_PRAISE,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0127,جزاكم الله خيرًا على سهولة البحث وجودة الشروح,SPAM,OFF_TOPIC_PERSONAL,POSITIVE
+syn-0128,ما معنى كلمة مدينة وكيف تُنطق بالشكل الصحيح,INQUIRY,GENERAL,NEUTRAL
+syn-0129,ما الفرق بين كلمة جسر وكلمة قريبة منها في المعنى,INQUIRY,GENERAL,NEUTRAL
+syn-0130,ترشيحي لكلمة العام هو كلمة مدينة,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0131,الموقع بطيء جدًا ويتوقف عند فتح نتائج البحث,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0132,ترشيحي لكلمة العام هو كلمة نافذة,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0133,عمل رائع ومفيد جدًا، بارك الله فيكم,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0134,الموقع بطيء جدًا ويتوقف عند فتح نتائج البحث,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0135,هل كلمة مدينة فصيحة وما أصلها في اللغة,INQUIRY,GENERAL,NEGATIVE
+syn-0136,جزاكم الله خيرًا على سهولة البحث وجودة الشروح,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0137,الصفحة لا تفتح من الهاتف وتظهر رسالة خطأ عند البحث عن مدينة,SPAM,TECHNICAL_ISSUE,POSITIVE
+syn-0138,ترشيحي لكلمة العام هو كلمة ضياء,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0139,اشتروا منتجاتنا الآن بأسعار مخفضة وعروض حصرية,THANKS_PRAISE,OFF_TOPIC_PERSONAL,NEGATIVE
+syn-0140,جزاكم الله خيرًا على سهولة البحث وجودة الشروح,THANKS_PRAISE,GENERAL,NEGATIVE
+syn-0141,ما الفرق بين كلمة حديقة وكلمة قريبة منها في المعنى,INQUIRY,GENERAL,NEUTRAL
+syn-0142,أبحث عن وظيفة مناسبة، هل لديكم فرص شاغرة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0143,ما معنى كلمة كتاب وكيف تُنطق بالشكل الصحيح,INQUIRY,WORD_SUBMISSION,NEUTRAL
+syn-0144,أرجو النظر في إضافة كلمة ميزان بمعناها المتداول,SUGGESTION,WORD_SUBMISSION,NEGATIVE
+syn-0145,شكرًا لكم على هذا المعجم المفيد وعلى جهودكم الواضحة,THANKS_PRAISE,TECHNICAL_ISSUE,POSITIVE
+syn-0146,تعرّفوا على أفضل خدمات الاستضافة الرخيصة,INQUIRY,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0147,جزاكم الله خيرًا على سهولة البحث وجودة الشروح,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0148,أرجو النظر في إضافة كلمة كتاب بمعناها المتداول,SUGGESTION,WORD_SUBMISSION,NEUTRAL
+syn-0149,عمل رائع ومفيد جدًا، بارك الله فيكم,THANKS_PRAISE,GENERAL,NEUTRAL
+syn-0150,أبحث عن وظيفة مناسبة، هل لديكم فرص شاغرة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0151,أرشح كلمة حديقة لتكون كلمة العام لأنها تعبّر عن المرحلة,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0152,أرشح كلمة مدينة لتكون كلمة العام لأنها تعبّر عن المرحلة,SUGGESTION,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0153,ما الفرق بين كلمة نافذة وكلمة قريبة منها في المعنى,INQUIRY,GENERAL,NEGATIVE
+syn-0154,وجدت خطأً إملائيًا في المثال الوارد في مادة طريق,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0155,هل يمكن إضافة قائمة بالكلمات المرتبطة بكل مادة,SUGGESTION,GENERAL,NEUTRAL
+syn-0156,جزاكم الله خيرًا على سهولة البحث وجودة الشروح,COMPLAINT,GENERAL,POSITIVE
+syn-0157,أقترح إضافة خاصية البحث بحسب الجذر لتسهيل الوصول إلى الكلمات,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0158,الموقع بطيء جدًا ويتوقف عند فتح نتائج البحث,SUGGESTION,TECHNICAL_ISSUE,NEGATIVE
+syn-0159,ما معنى كلمة قلم وكيف تُنطق بالشكل الصحيح,INQUIRY,ENTRY_CORRECTION,NEUTRAL
+syn-0160,الشرح الموجود لكلمة حديقة ناقص ولا يغطي المعنى الشائع,COMPLAINT,WORD_OF_YEAR_NOMINATION,NEGATIVE
+syn-0161,رابط الصوت لا يعمل عندي في صفحة كلمة طريق,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0162,اشتروا منتجاتنا الآن بأسعار مخفضة وعروض حصرية,SPAM,TECHNICAL_ISSUE,NEUTRAL
+syn-0163,المعنى المذكور لكلمة طريق غير دقيق وأرجو مراجعته,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0164,الموقع بطيء جدًا ويتوقف عند فتح نتائج البحث,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0165,وجدت خطأً إملائيًا في المثال الوارد في مادة سوار,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0166,أقترح إضافة كلمة ميزان إلى المعجم لأنها شائعة بين الناس,SUGGESTION,WORD_SUBMISSION,NEUTRAL
+syn-0167,الموقع بطيء جدًا ويتوقف عند فتح نتائج البحث,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0168,وجدت خطأً إملائيًا في المثال الوارد في مادة ميزان,COMPLAINT,ENTRY_CORRECTION,NEUTRAL
+syn-0169,وجدت خطأً إملائيًا في المثال الوارد في مادة قلم,COMPLAINT,DICTIONARY_SUGGESTION,NEGATIVE
+syn-0170,أتمنى إضافة أمثلة تطبيقية أكثر لكل مادة في المعجم,SPAM,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0171,وجدت خطأً إملائيًا في المثال الوارد في مادة نافذة,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0172,ما معنى كلمة ميزان وكيف تُنطق بالشكل الصحيح,INQUIRY,TECHNICAL_ISSUE,NEUTRAL
+syn-0173,وجدت خطأً إملائيًا في المثال الوارد في مادة غيمة,COMPLAINT,WORD_OF_YEAR_NOMINATION,NEGATIVE
+syn-0174,اشتروا منتجاتنا الآن بأسعار مخفضة وعروض حصرية,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0175,الشرح الموجود لكلمة كتاب ناقص ولا يغطي المعنى الشائع,SUGGESTION,ENTRY_CORRECTION,NEGATIVE
+syn-0176,الصفحة لا تفتح من الهاتف وتظهر رسالة خطأ عند البحث عن غيمة,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0177,ما الفرق بين كلمة طريق وكلمة قريبة منها في المعنى,INQUIRY,WORD_SUBMISSION,NEUTRAL
+syn-0178,ترشيحي لكلمة العام هو كلمة كتاب,SUGGESTION,GENERAL,POSITIVE
+syn-0179,المعنى المذكور لكلمة قلم غير دقيق وأرجو مراجعته,THANKS_PRAISE,OFF_TOPIC_PERSONAL,NEGATIVE
+syn-0180,اشتروا منتجاتنا الآن بأسعار مخفضة وعروض حصرية,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0181,هل كلمة ضياء فصيحة وما أصلها في اللغة,INQUIRY,GENERAL,NEUTRAL
+syn-0182,أرجو النظر في إضافة كلمة رحلة بمعناها المتداول,SUGGESTION,WORD_SUBMISSION,NEUTRAL
+syn-0183,هل يمكن إضافة قائمة بالكلمات المرتبطة بكل مادة,SUGGESTION,DICTIONARY_SUGGESTION,NEUTRAL
+syn-0184,الصفحة لا تفتح من الهاتف وتظهر رسالة خطأ عند البحث عن حديقة,COMPLAINT,TECHNICAL_ISSUE,POSITIVE
+syn-0185,المعنى المذكور لكلمة طريق غير دقيق وأرجو مراجعته,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0186,رابط الصوت لا يعمل عندي في صفحة كلمة حديقة,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0187,أقترح إضافة كلمة غيمة إلى المعجم لأنها شائعة بين الناس,SUGGESTION,WORD_SUBMISSION,NEUTRAL
+syn-0188,أبحث عن وظيفة مناسبة، هل لديكم فرص شاغرة,SPAM,OFF_TOPIC_PERSONAL,NEUTRAL
+syn-0189,أرشح كلمة حديقة لتكون كلمة العام لأنها تعبّر عن المرحلة,COMPLAINT,TECHNICAL_ISSUE,POSITIVE
+syn-0190,هل يمكن إضافة قائمة بالكلمات المرتبطة بكل مادة,SUGGESTION,DICTIONARY_SUGGESTION,POSITIVE
+syn-0191,عمل رائع ومفيد جدًا، بارك الله فيكم,INQUIRY,WORD_OF_YEAR_NOMINATION,POSITIVE
+syn-0192,الموقع بطيء جدًا ويتوقف عند فتح نتائج البحث,COMPLAINT,TECHNICAL_ISSUE,NEGATIVE
+syn-0193,عمل رائع ومفيد جدًا، بارك الله فيكم,SUGGESTION,GENERAL,POSITIVE
+syn-0194,هل كلمة غيمة فصيحة وما أصلها في اللغة,INQUIRY,GENERAL,NEUTRAL
+syn-0195,وجدت خطأً إملائيًا في المثال الوارد في مادة رحلة,COMPLAINT,ENTRY_CORRECTION,NEGATIVE
+syn-0196,عمل رائع ومفيد جدًا، بارك الله فيكم,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0197,عمل رائع ومفيد جدًا، بارك الله فيكم,THANKS_PRAISE,GENERAL,POSITIVE
+syn-0198,أقترح إضافة كلمة سوار إلى المعجم لأنها شائعة بين الناس,SUGGESTION,WORD_SUBMISSION,NEUTRAL

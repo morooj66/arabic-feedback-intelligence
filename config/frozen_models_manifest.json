@@ -1,0 +1,64 @@
+{
+  "_comment": "Non-secret manifest describing the private Hugging Face model repo that holds the frozen, fine-tuned MARBERTv2 topic checkpoint, the fitted intent classifier, and the frozen model-selection metadata. No visitor data, no credentials. Consumed by scripts/fetch_frozen_models.py. sha256 values are computed from the exact bytes already used in production locally (data/models/...); do not change them unless the frozen model itself is deliberately re-frozen and re-approved.",
+  "default_revision": "43f6b1a8992f96b49c8775b60cfe4be0bde06dc5",
+  "_public_models_comment": "Public Hugging Face models the served classifier loads at inference time (not private, no token needed). Each is pinned to an exact commit and every file is checksummed; scripts/fetch_frozen_models.py places them under local_dir and rcs.training.hf_loading loads ONLY from there in production (never from the Hub, never from a floating branch). The revision and sha256 values were recorded from the cached files of the system that was actually tested (refs/main of the local Hugging Face cache = this commit); do not change them unless the sentiment model is deliberately re-frozen and re-approved.",
+  "public_models": [
+    {
+      "repo_id": "CAMeL-Lab/bert-base-arabic-camelbert-da-sentiment",
+      "revision": "b0df630d23e5aa5f8a326017605337f6d0863ecd",
+      "purpose": "frozen pretrained sentiment model (inference only, no fine-tuning)",
+      "local_dir": "data/models/public/camelbert-da-sentiment",
+      "files": [
+        {"name": "config.json", "size_bytes": 841, "sha256": "8e12a192f814543528f6b8310881dbd1a687513930d21f91aa70eb6d92be5b57"},
+        {"name": "model.safetensors", "size_bytes": 436362320, "sha256": "3d084c6021a61a2e8dfe496ea4e0c60580b3f02ffbea214039dd17676cb2dd32"},
+        {"name": "special_tokens_map.json", "size_bytes": 112, "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3"},
+        {"name": "tokenizer_config.json", "size_bytes": 86, "sha256": "73f5e97ab29042bac49dc96f7b8a7a790994509bbd2fe3e9cd4f59affc46c2ce"},
+        {"name": "vocab.txt", "size_bytes": 304561, "sha256": "1df5f8da6ad6c56153c7a974c0b149bb7a0a6e332bcfa795c99deee6c1136ce2"}
+      ]
+    }
+  ],
+  "files": [
+    {
+      "repo_path": "topic_marbertv2/config.json",
+      "local_dest": "data/models/final_test/checkpoints/marbertv2_topic/best/config.json",
+      "sha256": "fa0154a9574744c0b52baee27132661ec193fd965dc38efd340fba419bd6905f",
+      "size_bytes": 1311
+    },
+    {
+      "repo_path": "topic_marbertv2/model.safetensors",
+      "local_dest": "data/models/final_test/checkpoints/marbertv2_topic/best/model.safetensors",
+      "sha256": "9e8ad2116904cd31fab4d4b7567a6f52c95da79abb72d9c82dee5b51ddf8b7d1",
+      "size_bytes": 651410452
+    },
+    {
+      "repo_path": "topic_marbertv2/tokenizer.json",
+      "local_dest": "data/models/final_test/checkpoints/marbertv2_topic/best/tokenizer.json",
+      "sha256": "f13ff54560936bb480cce6ce2af0fb87b4d67a6083a94cf91e53001998d1131d",
+      "size_bytes": 2691333
+    },
+    {
+      "repo_path": "topic_marbertv2/tokenizer_config.json",
+      "local_dest": "data/models/final_test/checkpoints/marbertv2_topic/best/tokenizer_config.json",
+      "sha256": "0088a6f8bcdd4014184fb068b83ebb12896a9db2bb269a71f73de83fef24bceb",
+      "size_bytes": 1292
+    },
+    {
+      "repo_path": "topic_marbertv2/special_tokens_map.json",
+      "local_dest": "data/models/final_test/checkpoints/marbertv2_topic/best/special_tokens_map.json",
+      "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+      "size_bytes": 125
+    },
+    {
+      "repo_path": "intent_tfidf_logistic.joblib",
+      "local_dest": "data/models/final_test/intent_tfidf_logistic.joblib",
+      "sha256": "234ed38f9a226bbcb2542b597b5353b2becab273fa4bf24c18ca90297a621449",
+      "size_bytes": 1102772
+    },
+    {
+      "repo_path": "frozen_model_selection.json",
+      "local_dest": "data/models/selection/FROZEN_MODEL_SELECTION.json",
+      "sha256": "6e210cb3dca159d7cb129ad6e3be114ffe75d5a9873ca81fba2bf74521bdcdfc",
+      "size_bytes": 5823
+    }
+  ]
+}

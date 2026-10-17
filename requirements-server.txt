@@ -1,0 +1,56 @@
+# Runtime dependencies for the deployed Reviewer API server only
+# (scripts/serve_reviewer_api.py's import chain: http_api.py,
+# excel_review_flow.py, frozen_inference.py, auth.py, etc.).
+#
+# This is a trimmed copy of requirements.txt for the Docker image only —
+# requirements.txt (the full dev/test set) is unchanged and still what
+# local development, the test suite, and the training/calibration wizard
+# scripts use. Nothing here changes any application code or behavior;
+# it only controls what gets installed in the container.
+#
+# Excluded, and why (confirmed unused by the server's own import chain —
+# grep across src/rcs/review/, src/rcs/classification/,
+# src/rcs/training/hf_loading.py, src/rcs/training/sentiment_pretrained.py,
+# config/settings.py, and scripts/serve_reviewer_api.py):
+#   - gradio: only used by scripts/run_calibration_wizard.py and
+#     scripts/run_b3_wizard.py (offline labeling tools, not the server).
+#     Its huge, fast-moving transitive dependency tree also made pip's
+#     resolver backtrack across dozens of gradio versions during a real
+#     build attempt (50+ minutes, still unresolved) — removing it is both
+#     correct (unused) and materially faster to build.
+#   - pytest: test runner, never imported by any src/rcs/review/*.py
+#     module at runtime.
+#   - datasets, accelerate: training/model-selection tooling
+#     (scripts/run_model_selection.py, Colab notebooks). Frozen inference
+#     only ever calls transformers' AutoModel/AutoTokenizer.from_pretrained()
+#     directly for a plain CPU forward pass — neither package is touched.
+#     datasets' transitive pyarrow dependency (47MB) was also the single
+#     slowest, least reliable download in a real build attempt.
+
+pandas>=2.0,<3
+openpyxl>=3.1
+SQLAlchemy>=2.0
+alembic>=1.13,<2
+psycopg[binary]>=3.1,<4
+bcrypt>=4.0,<5
+python-dateutil>=2.8
+pydantic>=2.0
+google-generativeai>=0.8
+google-genai>=2.3,<3
+numpy>=1.24
+scikit-learn>=1.3,<1.7
+transformers>=4.40,<5
+torch>=2.1,<3
+huggingface_hub>=0.24,<2
+
+# Added for staging: runtime imports that were missing from the server-only set (found by importing the real server entrypoint and mapping every loaded third-party module
+# to its distribution; see tests/test_server_requirements.py).
+# Microsoft Entra ID SSO: rcs.review.entra_auth does `import jwt` at module level and http_api imports it, so the server cannot start without it (even with SSO unconfigured).
+PyJWT[crypto]>=2.8,<3
+# rcs.review.db_errors (imported by http_api) imports pymongo.errors at module level, so pymongo is needed even when PERSISTENCE_BACKEND=postgres.
+pymongo>=4.6,<5
+# Imported directly by rcs.evaluation.genai_client for Gemini retry classification (also a dependency of google-genai; listed so the import never depends on a transitive).
+httpx>=0.28.1,<1.0.0
+# Torch note: on Linux plain PyPI resolves to a CUDA build. Install the CPU wheel first, from PyTorch's own index, then this file:
+#   pip install --index-url https://download.pytorch.org/whl/cpu torch && pip install -r requirements-server.txt
+# (Dockerfile and render.yaml both do exactly this; inference is CPU-only.)

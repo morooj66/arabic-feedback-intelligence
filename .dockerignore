@@ -1,0 +1,43 @@
+# Secrets — never enter the build context.
+.env
+.env.*
+!.env.example
+
+# Visitor data, databases, uploads, research datasets, model binaries —
+# same exclusions as .gitignore, for the same reasons. None of this is
+# ever needed in the image: the frozen models are fetched at container
+# startup (see docker/entrypoint.sh), and all data/db state lives in
+# Supabase Postgres or a mounted volume, not in the image.
+data/models/
+data/db/
+data/uploads/
+data/raw/
+data/gold/
+data/feedback_research/
+data/fixtures/
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.xlsx
+demo_package/
+_scratch/
+
+# Local dev / VCS / tooling — not part of the running application.
+.git/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+dist/
+.DS_Store
+.claude/
+
+# Frontend, tests, training notebooks, and docs — irrelevant to this
+# backend image; excluding them keeps the build context small.
+web/
+tests/
+colab/
+kaggle/
+notebooks/
+*.md

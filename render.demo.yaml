@@ -1,0 +1,28 @@
+# Render Blueprint for the SYNTHETIC-DATA DEMO backend. NOT deployed; nothing here is a secret.
+# Prerequisites (operator, once): a dedicated PostgreSQL database named rcs_demo_* with NO real data, prepared with scripts/demo/init_demo_environment.py from the
+# operator's own machine. Set DATABASE_URL and ALLOWED_ORIGINS in the dashboard (sync: false): they are never read from this file.
+services:
+  - type: web
+    name: rcs-demo-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile.demo
+    plan: starter              # demo mode needs no model weights: a small instance is enough (measure before choosing; 512 MB is expected to suffice)
+    region: oregon
+    branch: main
+    healthCheckPath: /api/health
+    autoDeploy: false          # nothing deploys until a human triggers it
+    envVars:
+      - key: RCS_ENV
+        value: production      # keeps the production hardening: Secure cookies, strict CORS/Origin checks, required DATABASE_URL
+      - key: PERSISTENCE_BACKEND
+        value: postgres
+      - key: RCS_DEMO_MODE
+        value: synthetic-demo
+      - key: RCS_DEMO_ACK
+        value: THIS_INSTANCE_HOLDS_SYNTHETIC_DATA_ONLY
+      - key: DATABASE_URL      # postgresql://...@host/rcs_demo_online   (demo-only database)
+        sync: false
+      - key: ALLOWED_ORIGINS   # the exact https origin of the Vercel demo site
+        sync: false
+      - key: RCS_TRUSTED_PROXIES
+        sync: false

@@ -1,0 +1,20 @@
+{
+  "model_id": "gemini-3.6-flash",
+  "status": "Stable (per https://ai.google.dev/gemini-api/docs/models)",
+  "verified_on": "2026-10-16",
+  "verified_how": "Official Google documentation pages read on the verification date; figures transcribed by a page summarizer. Re-read https://ai.google.dev/gemini-api/docs/pricing immediately before any live run.",
+  "sources": [
+    "https://ai.google.dev/gemini-api/docs/pricing",
+    "https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash",
+    "https://ai.google.dev/gemini-api/docs/thinking",
+    "https://ai.google.dev/gemini-api/docs/structured-output",
+    "https://ai.google.dev/api/interactions-api"
+  ],
+  "currency": "USD",
+  "unit_tokens": 1000000,
+  "tiers": [
+    {"valid_from": "2020-01-01", "valid_to": "2026-12-31", "input_per_unit": 0.75, "output_per_unit": 3.75, "note": "output price includes thinking tokens; standard (non-batch) tier"},
+    {"valid_from": "2027-01-01", "valid_to": "2999-12-31", "input_per_unit": 1.50, "output_per_unit": 7.50, "note": "announced price from 2027-01-01"}
+  ],
+  "batch_tiers_note": "Batch API is half price (0.375 / 1.875 through 2026-12-31) but is asynchronous; not used by this plan."
+}

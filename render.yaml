@@ -1,0 +1,80 @@
+# Phase 7 — Render Blueprint for the Python backend (long-lived process,
+# persistent-process host; see Phase 7 deployment report for why this is
+# not Vercel serverless functions).
+#
+# Usage: connect this repository in the Render dashboard ("New +" →
+# "Blueprint"), point it at this file, and set the secret env vars below
+# (marked sync: false — Render prompts for them in the dashboard, they
+# are never read from this file or committed to the repo).
+#
+# No Redis/Celery/Kubernetes — one Web Service, a persistent Python
+# process, talking to the existing Supabase PostgreSQL over DATABASE_URL.
+
+services:
+  - type: web
+    name: rcs-reviewer-api
+    runtime: python
+    # 1 CPU / 2GB RAM — measured peak RSS for a single classification
+    # request was ~421MB (idle ~110MB); Render Free's 512MB left an unsafe
+    # ~90MB margin. See Phase 7 deployment-capacity report.
+    plan: 1c-2g
+    region: oregon
+    branch: main
+    # scripts/fetch_frozen_models.py pulls the frozen MARBERTv2 topic
+    # checkpoint, the fitted intent classifier, and the frozen
+    # model-selection metadata from a private Hugging Face model repo at a
+    # pinned revision — never retrained/modified, just placed on disk
+    # before the server starts. It fails the build (non-zero exit) on any
+    # missing/corrupt/checksum-mismatched file.
+    #
+    # Server-only dependencies (requirements-server.txt - no training/dev packages) with the CPU torch wheel installed first from PyTorch's own index: plain PyPI
+    # resolves to a multi-GB CUDA build on Linux, and inference here is CPU-only. The same fetch step also places the PINNED public sentiment model
+    # (CAMeL-Lab/bert-base-arabic-camelbert-da-sentiment @ the commit in config/frozen_models_manifest.json) so production never downloads a model at request time.
+    buildCommand: "pip install --index-url https://download.pytorch.org/whl/cpu torch && pip install -r requirements-server.txt && python scripts/fetch_frozen_models.py"
+    startCommand: "python scripts/serve_reviewer_api.py"
+    healthCheckPath: /api/health
+    # Off for the first staging service: nothing may deploy until a human triggers it, so a push can never ship an unverified tree.
+    autoDeploy: false
+    # Uploaded workbooks (they contain visitor data) and the resumable import state live here, not on the ephemeral container disk. One instance only: a Render disk
+    # attaches to a single instance, which also matches the in-process login rate limiter.
+    disk:
+      name: rcs-uploads
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: RCS_UPLOAD_DIR
+        value: /var/data/uploads
+      - key: RCS_ENV
+        value: production
+      # Render sets PORT automatically; scripts/serve_reviewer_api.py
+      # reads it and binds 0.0.0.0 whenever RCS_ENV=production.
+      # Required: production refuses to start without it. A PostgreSQL URL; "postgresql://..." is normalised to the installed psycopg v3 driver.
+      - key: DATABASE_URL
+        sync: false
+      - key: PERSISTENCE_BACKEND
+        value: postgres
+      # Comma-separated IPs/CIDRs of the reverse proxies whose X-Forwarded-For may be trusted (login rate limiting). Leave empty until the real proxy addresses are
+      # known; the server then logs a warning and treats the proxy as the client.
+      - key: RCS_TRUSTED_PROXIES
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      # Comma-separated exact frontend origin(s), e.g.
+      # https://rcs-reviewer.vercel.app,https://rcs-reviewer-preview.vercel.app
+      - key: ALLOWED_ORIGINS
+        sync: false
+      # Private HF model repo holding the frozen artifacts. Not itself a
+      # secret (a repo name, not a credential) — committed directly.
+      - key: HF_MODEL_REPO_ID
+        value: <your-hf-account>/<your-private-model-repo>
+      # Pinned commit SHA (never a floating branch like "main") for the
+      # exact known-good frozen artifact revision to deploy. Also not a
+      # secret — the same value recorded in
+      # config/frozen_models_manifest.json's default_revision.
+      - key: HF_MODEL_REVISION
+        value: <pinned-commit-sha>
+      # Read-only token scoped to only the HF_MODEL_REPO_ID repo above.
+      # Genuinely secret — set only in the Render dashboard, never here.
+      - key: HF_TOKEN
+        sync: false
+      # Optional features (password-reset e-mail via RCS_SMTP_*, Microsoft sign-in via ENTRA_*) are enabled by adding their variables in the dashboard later; see docs/PRODUCTION_DEPLOYMENT.md.

@@ -1,0 +1,105 @@
+[
+  {
+    "source_id": "TEST-SYNTHETIC-OK-1",
+    "source_title": "معجم اختباري اصطناعي [SYNTHETIC TEST FIXTURE — NOT A REAL DICTIONARY]",
+    "source_type": "dictionary_entry",
+    "content": "هذا تعريف اصطناعي للكلمة الاختبارية الأولى، لا يمثل أي حقيقة لغوية حقيقية.",
+    "version": "test-fixture-v1",
+    "effective_from": "2020-01-01T00:00:00",
+    "authoritative": true,
+    "provenance_tag": "official_approved",
+    "entry_id": "TEST-ENTRY-1",
+    "lemma": "تجريبي-كلمة-أ"
+  },
+  {
+    "source_id": "TEST-SYNTHETIC-OK-2",
+    "source_title": "معجم اختباري اصطناعي [SYNTHETIC TEST FIXTURE — NOT A REAL DICTIONARY]",
+    "source_type": "dictionary_entry",
+    "content": "هذا تعريف اصطناعي للكلمة الاختبارية الثانية، لأغراض الاختبار فقط.",
+    "version": "test-fixture-v1",
+    "effective_from": "2020-01-01T00:00:00",
+    "authoritative": true,
+    "provenance_tag": "official_approved",
+    "entry_id": "TEST-ENTRY-2",
+    "lemma": "تجريبي-كلمة-ب"
+  },
+  {
+    "source_id": "TEST-SYNTHETIC-OK-3-SENSE-A",
+    "source_title": "معجم اختباري اصطناعي [SYNTHETIC TEST FIXTURE — NOT A REAL DICTIONARY]",
+    "source_type": "dictionary_entry",
+    "content": "المعنى الاصطناعي الأول للمدخل المشترك في بيانات الاختبار.",
+    "version": "test-fixture-v1",
+    "effective_from": "2020-01-01T00:00:00",
+    "authoritative": true,
+    "provenance_tag": "official_approved",
+    "entry_id": "TEST-ENTRY-SHARED",
+    "lemma": "تجريبي-متعدد-المعاني"
+  },
+  {
+    "source_id": "TEST-SYNTHETIC-OK-4-SENSE-B",
+    "source_title": "معجم اختباري اصطناعي [SYNTHETIC TEST FIXTURE — NOT A REAL DICTIONARY]",
+    "source_type": "dictionary_entry",
+    "content": "المعنى الاصطناعي الثاني لنفس المدخل المشترك، بلا ترتيب أولوية معلن.",
+    "version": "test-fixture-v1",
+    "effective_from": "2020-01-01T00:00:00",
+    "authoritative": true,
+    "provenance_tag": "official_approved",
+    "entry_id": "TEST-ENTRY-SHARED",
+    "lemma": "تجريبي-متعدد-المعاني"
+  },
+  {
+    "source_id": "TEST-SYNTHETIC-SEMANTIC-1",
+    "source_title": "معجم اختباري اصطناعي [SYNTHETIC TEST FIXTURE — NOT A REAL DICTIONARY]",
+    "source_type": "dictionary_entry",
+    "content": "محتوى اصطناعي يحتوي على رمز الاختبار SEMANTICKEY داخل الجملة لأغراض التطابق الدلالي.",
+    "version": "test-fixture-v1",
+    "effective_from": "2020-01-01T00:00:00",
+    "authoritative": true,
+    "provenance_tag": "official_approved"
+  },
+  {
+    "source_id": "TEST-SYNTHETIC-NOT-APPROVED",
+    "source_title": "معجم اختباري اصطناعي [SYNTHETIC TEST FIXTURE — NOT A REAL DICTIONARY]",
+    "source_type": "dictionary_entry",
+    "content": "سجل اصطناعي بلا وسم موافقة رسمية -- يجب استثناؤه دائمًا من المتن المحكوم.",
+    "version": "test-fixture-v1",
+    "effective_from": "2020-01-01T00:00:00",
+    "authoritative": true,
+    "provenance_tag": "draft_pending_review",
+    "entry_id": "TEST-ENTRY-NOT-APPROVED"
+  },
+  {
+    "source_id": "TEST-SYNTHETIC-NOT-AUTHORITATIVE",
+    "source_title": "معجم اختباري اصطناعي [SYNTHETIC TEST FIXTURE — NOT A REAL DICTIONARY]",
+    "source_type": "dictionary_entry",
+    "content": "سجل اصطناعي بعلم authoritative=false -- يجب استثناؤه دائمًا من المتن المحكوم.",
+    "version": "test-fixture-v1",
+    "effective_from": "2020-01-01T00:00:00",
+    "authoritative": false,
+    "provenance_tag": "official_approved",
+    "entry_id": "TEST-ENTRY-NOT-AUTHORITATIVE"
+  },
+  {
+    "source_id": "TEST-SYNTHETIC-NOT-YET-EFFECTIVE",
+    "source_title": "معجم اختباري اصطناعي [SYNTHETIC TEST FIXTURE — NOT A REAL DICTIONARY]",
+    "source_type": "dictionary_entry",
+    "content": "سجل اصطناعي يبدأ نفاذه في المستقبل البعيد -- يجب استثناؤه حتى ذلك الحين.",
+    "version": "test-fixture-v1",
+    "effective_from": "2099-01-01T00:00:00",
+    "authoritative": true,
+    "provenance_tag": "official_approved",
+    "entry_id": "TEST-ENTRY-NOT-YET-EFFECTIVE"
+  },
+  {
+    "source_id": "TEST-SYNTHETIC-EXPIRED",
+    "source_title": "معجم اختباري اصطناعي [SYNTHETIC TEST FIXTURE — NOT A REAL DICTIONARY]",
+    "source_type": "dictionary_entry",
+    "content": "سجل اصطناعي انتهى نفاذه في الماضي -- يجب استثناؤه بعد تاريخ الانتهاء.",
+    "version": "test-fixture-v1",
+    "effective_from": "2020-01-01T00:00:00",
+    "effective_to": "2021-01-01T00:00:00",
+    "authoritative": true,
+    "provenance_tag": "official_approved",
+    "entry_id": "TEST-ENTRY-EXPIRED"
+  }
+]

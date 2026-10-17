@@ -1,0 +1,84 @@
+.focus-review { width: 100%; max-width: 880px; margin: 18px auto; color: #34443a; font-size: 14px; line-height: 1.8; min-width: 0; }
+.focus-review :is(h2,h3,p,dl,dd) { margin: 0; }
+.focus-review h2 { font-size: 22px; font-weight: 500; color: #2d5140; }
+.focus-review h3 { font-size: 16px; font-weight: 500; }
+.focus-review button { font: inherit; font-size: 13px; min-height: 44px; padding: 9px 15px; border: 1px solid #dfe7e1; border-radius: 8px; background: white; color: #2f6b4f; cursor: pointer; }
+.focus-review button:hover:not(:disabled) { background: #f0f5f2; }
+.focus-review button:disabled { opacity: .5; cursor: not-allowed; }
+.focus-review button.primary { background: #2f6b4f; border-color: #2f6b4f; color: white; }
+.focus-review button.primary:hover:not(:disabled) { background: #24563e; }
+.focus-review :is(button,textarea,select,summary):focus-visible { outline: 2px solid #2f6b4f; outline-offset: 3px; }
+.focus-review .focus-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.focus-review .focus-nav > div { display: flex; align-items: center; gap: 12px; }
+.focus-review .focus-nav span { text-align: center; min-width: 90px; color: #506558; }
+.focus-review .focus-nav small { display: block; font-size: 10px; color: #68766e; }
+.focus-review .focus-body { background: white; border: 1px solid #e7ede9; border-radius: 13px; padding: 24px; box-shadow: 0 4px 20px rgb(28 57 40 / 2.5%); }
+.focus-review .focus-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding-bottom: 20px; }
+.focus-review .focus-heading p { color: #68766e; font-size: 12px; }
+.focus-review .focus-heading bdi { overflow-wrap: anywhere; word-break: break-all; }
+.focus-review .focus-heading > div { min-width: 0; }
+.focus-review .focus-heading h2 { overflow-wrap: anywhere; }
+.focus-review .focus-tag { color: #42644f; background: #edf4ef; border-radius: 6px; padding: 4px 10px; font-size: 12px; flex-shrink: 0; }
+.focus-review .focus-comment { padding: 18px 20px; border-inline-start: 3px solid #a9c4b3; background: #f5f8f6; border-radius: 8px; }
+.focus-review .focus-comment h3 { color: #597261; font-size: 12px; margin-bottom: 8px; }
+.focus-review .focus-comment p { font-size: 16px; line-height: 2; white-space: pre-wrap; overflow-wrap: anywhere; }
+.focus-review .focus-classification { display: flex; flex-wrap: wrap; gap: 14px 28px; padding: 16px 0; }
+.focus-review .focus-classification > div { display: flex; gap: 8px; align-items: baseline; font-size: 12px; }
+.focus-review dt { color: #68766e; }
+.focus-review dd { color: #385540; }
+.focus-review .focus-context { display: flex; gap: 8px 20px; flex-wrap: wrap; font-size: 12px; color: #68766e; padding-bottom: 16px; overflow-wrap: anywhere; }
+.focus-review .focus-response { border: 1px solid #dfe7e1; border-radius: 10px; overflow: hidden; margin-top: 6px; }
+.focus-review .focus-response.is-editing { border-color: #90ad9b; }
+.focus-review .focus-response header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 18px; border-bottom: 1px solid #edf1ee; }
+.focus-review .focus-response header p { font-size: 12px; color: #68766e; }
+.focus-review .focus-response header button { flex-shrink: 0; }
+.focus-review textarea { display: block; width: 100%; min-height: 170px; border: 0; border-radius: 0; padding: 18px; font: inherit; font-size: 15px; line-height: 2; resize: vertical; background: white; color: #34443a; }
+.focus-review textarea:focus-visible { outline-offset: -3px; }
+.focus-review .focus-response footer { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; padding: 6px 18px; color: #68766e; font-size: 11px; border-top: 1px solid #edf1ee; }
+.focus-review .focus-response footer button { border: 0; margin-inline-start: auto; font-size: 12px; }
+.focus-review details { padding: 12px 18px; font-size: 13px; border-top: 1px solid #edf1ee; }
+.focus-review summary { cursor: pointer; color: #2f6b4f; min-height: 32px; }
+.focus-review details p { white-space: pre-wrap; overflow-wrap: anywhere; margin-top: 10px; }
+.focus-review .focus-actions { padding-top: 18px; }
+.focus-review .focus-actions p { font-size: 12px; color: #68766e; margin-bottom: 10px; }
+.focus-review .focus-actions > div { display: flex; flex-wrap: wrap; gap: 10px; }
+.focus-review .focus-notice { border: 1px solid #d4e3d9; border-radius: 8px; background: #edf5ef; color: #305740; padding: 12px 16px; margin-bottom: 16px; }
+.focus-review .focus-error { padding: 12px 16px; border: 1px solid #ebd5cc; background: #fcf5f1; border-radius: 8px; color: #86492e; margin-bottom: 16px; }
+.focus-review .focus-error button { margin-top: 10px; }
+.focus-review .focus-state { padding: 48px 12px; text-align: center; }
+.focus-review .focus-state p { color: #68766e; margin-top: 10px; }
+.focus-review .focus-modal-back { position: fixed; inset: 0; z-index: 100; background: rgb(20 39 28 / 35%); display: grid; place-items: center; padding: 20px; }
+.focus-review .focus-modal { width: min(440px,100%); max-height: calc(100dvh - 40px); overflow: auto; background: white; border-radius: 13px; padding: 24px; }
+.focus-review .focus-modal p { margin: 10px 0; }
+.focus-review .focus-modal label { display: block; margin: 16px 0; }
+.focus-review select { display: block; width: 100%; font: inherit; color: #34443a; background: white; min-height: 44px; padding: 8px; border: 1px solid #dfe7e1; border-radius: 8px; margin-top: 6px; }
+.focus-review .focus-modal > div { display: flex; gap: 10px; }
+@media (max-width: 600px) {
+  .focus-review { margin: 2px auto; }
+  .focus-review .focus-nav { flex-wrap: wrap; gap: 10px; }
+  .focus-review .focus-nav > div { width: 100%; justify-content: space-between; }
+  .focus-review .focus-body { padding: 16px; }
+  .focus-review h2 { font-size: 19px; }
+  .focus-review .focus-heading { gap: 10px; }
+  .focus-review .focus-comment { padding: 14px; }
+  .focus-review .focus-comment p { font-size: 15px; }
+  .focus-review .focus-classification { gap: 8px 16px; }
+  .focus-review .focus-response header { padding: 14px; align-items: flex-start; flex-wrap: wrap; gap: 8px; }
+  .focus-review textarea { padding: 14px; min-height: 210px; font-size: 16px; }
+  .focus-review .focus-response footer { padding-inline: 14px; }
+  .focus-review .focus-actions > div { display: grid; grid-template-columns: 1fr 1fr; }
+  .focus-review .focus-actions button:last-child { grid-column: 1 / -1; }
+}
+.focus-review .focus-safety { padding: 14px 16px; border: 1px solid #e6d9b8; background: #fbf7ea; border-radius: 8px; color: #5f4a14; margin: 0 0 16px; }
+.focus-review .focus-safety--blocked { border-color: #ebd5cc; background: #fcf5f1; color: #86492e; }
+.focus-review .focus-safety h3 { margin: 0 0 6px; }
+.focus-review .focus-safety p { margin: 6px 0; }
+.focus-review .focus-safety ul { margin: 8px 0; padding-inline-start: 20px; }
+.focus-review .focus-safety label { display: block; margin: 10px 0; }
+.focus-review .focus-safety-stale { font-weight: 600; }
+.focus-review .focus-safety > div { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.focus-review .focus-flags { padding: 12px 14px; margin: 4px 0 12px; background: #faf5e9; border: 1px solid #ecdcb9; border-radius: 8px; color: #5f4a22; font-size: 13px; line-height: 1.9; }
+.focus-review .focus-flags h3 { font-size: 13px; margin: 0 0 2px; }
+.focus-review .focus-flags p { margin: 0 0 4px; color: inherit; font-size: 12px; }
+.focus-review .focus-flags ul { margin: 0; padding-inline-start: 18px; }
+.focus-review .focus-flags .focus-flags-reason { margin-top: 4px; font-size: 13px; }

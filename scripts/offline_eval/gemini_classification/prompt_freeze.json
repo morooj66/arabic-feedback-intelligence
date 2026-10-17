@@ -1,0 +1,6 @@
+{
+ "prompt_version": "gc-v1",
+ "system_instruction_sha256": "7f590a525f84f6b2ce9faff0e56537e89ac297fc3a3e9b74994c725fcfcb1d05",
+ "frozen_on": "2026-10-16",
+ "note": "Frozen after the 10-call synthetic smoke test; no held-out or real row was used to write or change it. Development-set iteration was skipped on purpose."
+}

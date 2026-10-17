@@ -1,0 +1,1 @@
+.demo-banner { position: fixed; left: 12px; bottom: 12px; z-index: 1000; max-width: calc(100vw - 24px); padding: 6px 12px; border-radius: 999px; background: #fff7e6; color: #7a5a1a; border: 1px solid #ecd9a8; font-size: 12px; line-height: 1.6; box-shadow: 0 2px 8px rgb(0 0 0 / 8%); pointer-events: none; }

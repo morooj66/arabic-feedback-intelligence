@@ -1,0 +1,18 @@
+{
+  "approver": "<name and role of the person authorising external processing>",
+  "approved_on": "<YYYY-MM-DD>",
+  "legal_basis": "<reference to the institution's approval / data-processing basis for sending sanitised visitor comments to Google (Gemini API)>",
+  "paid_tier_confirmed": false,
+  "independent_reviewer_read_inputs": false,
+  "scope": "Classification only, gemini-3.6-flash, frozen prompt gc-v1; sanitised, hash-approved comments from the two named held-out sets; results used for the pre-registered selection rule; no production change.",
+  "max_calls": 160,
+  "max_usd": 1.0,
+  "datasets": [
+    "human_test",
+    "blind_natural"
+  ],
+  "input_sha256": {
+    "human_test": "<sha256 printed by sanitized_inputs build and recorded after the person read human_test_INSPECTION.md>",
+    "blind_natural": "<same for blind_natural>"
+  }
+}

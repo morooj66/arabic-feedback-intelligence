@@ -1,0 +1,13 @@
+# Dependencies of the SYNTHETIC-DATA DEMO container only (Dockerfile.demo). No torch, transformers, scikit-learn, Hugging Face or LLM client libraries: demo mode
+# (rcs.demo) uses a rule-based classifier and a local draft generator, and refuses to import those libraries at all.
+pandas>=2.0,<3
+openpyxl>=3.1
+SQLAlchemy>=2.0
+alembic>=1.13,<2
+psycopg[binary]>=3.1,<4
+bcrypt>=4.0,<5
+python-dateutil>=2.8
+pydantic>=2.0
+PyJWT[crypto]>=2.8,<3
+numpy>=1.24
+pymongo>=4.6,<5            # imported by rcs.review.db_errors (error classification) even when PostgreSQL is used

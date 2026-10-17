@@ -1,0 +1,22 @@
+# Backend container for the SYNTHETIC-DATA ONLINE DEMO (not for production use).
+# No model weights, no torch/transformers, no LLM SDK, no secrets baked in. Demo mode is switched on only by environment variables at run time and only passes its guard
+# (rcs.demo.guard) when the database is a dedicated "rcs_demo*" database and no production secret is present.
+FROM python:3.13-slim
+
+WORKDIR /app
+COPY requirements-demo.txt .
+RUN pip install --no-cache-dir -r requirements-demo.txt
+
+COPY config/ config/
+COPY src/ src/
+COPY scripts/serve_reviewer_api.py scripts/serve_reviewer_api.py
+COPY scripts/demo/init_demo_environment.py scripts/demo/init_demo_environment.py
+COPY migrations/ migrations/
+COPY alembic.ini .
+RUN useradd --create-home --uid 10001 rcs && mkdir -p /app/data/uploads && chown -R rcs:rcs /app/data
+USER rcs
+ENV PYTHONUNBUFFERED=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
+EXPOSE 8080
+# Render/Fly inject PORT; the server binds 0.0.0.0 when RCS_ENV=production. The operator prepares the database ONCE from their own machine with
+# scripts/demo/init_demo_environment.py (migrations, invite-only accounts with random passwords, synthetic data).
+CMD ["python", "scripts/serve_reviewer_api.py"]

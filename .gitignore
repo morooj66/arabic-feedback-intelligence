@@ -1,0 +1,99 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+dist/
+.DS_Store
+
+# ML model checkpoints — large binary artifacts, never pushed to GitHub.
+# Production hosting for these is a separate, not-yet-decided mechanism.
+data/models/
+
+# Runtime data: uploaded Excel files (visitor PII), SQLite databases and
+# backups, and processing caches — none of this belongs in source control.
+data/db/
+data/uploads/
+*.sqlite
+*.sqlite3
+*.sqlite-*
+
+# Source/training/eval data — real visitor exports and gold-label
+# datasets derived from them; not needed by the deployed reviewer app.
+data/raw/
+data/gold/
+data/feedback_research/
+data/fixtures/
+
+# Generated review/export workbooks and reports left at the repo root
+# or in demo/scratch folders during manual testing.
+*.xlsx
+demo_package/
+_scratch/
+response_quality_review_rg_v5_30_report.json
+
+# Interactive AI Evaluation Playground: explicitly-saved test cases may
+# contain free text typed by a developer; never commit them.
+data/evaluation/playground/
+
+# Local Jev development-validation artifacts (sanitized inputs, gold labels, id maps, predictions)
+/data/evaluation/jev_dev_validation/
+/data/evaluation/jev_v2_holdout/
+/data/evaluation/privacy_audit/
+/data/evaluation/blind_eval_v1/
+/data/evaluation/error_analysis/
+/data/evaluation/intent_candidate_v1/
+/data/models/experimental/
+/data/evaluation/system_audit/
+/data/evaluation/classification_v2/
+/data/evaluation/reply_quality/
+/data/evaluation/classification_v2_final_validation/
+
+# ---------------------------------------------------------------------------
+# Pre-deployment protection (added during staging preparation). Everything below is private, local or machine-generated and must never be committed.
+# ---------------------------------------------------------------------------
+
+# Private visitor-comment artifacts: reviewed visitor comments and replies from manual review sessions, and any other JSONL under data/.
+data/processed/
+data/**/*.jsonl
+
+# Coordinator-only label mappings (blind-label provenance). Reviewers' instructions/scripts in the sibling folders are not private, this folder is.
+data/evaluation/label_audit_round1/coordinator_only/
+
+# Context-signal evaluation outputs (aggregate results and id prefixes derived from real visitor comments).
+data/evaluation/context_signals/
+
+# Local database files of any shape (a stray SQLite file was found in the repo root under a placeholder name).
+PASTE_DB_URL_HERE
+*.db
+*.db-*
+*.sqlite-wal
+*.sqlite-shm
+
+# Environment files and secrets. Only the *.example templates are tracked.
+.env.*
+!.env.example
+.env.local
+web/.env.local
+web/.env.*.local
+*.pem
+*.key
+secrets/
+
+# Offline evaluation outputs: Arabic case files, labels and drafts (found untracked but not ignored during the pre-Git audit).
+scripts/offline_eval/**/results/
+scripts/benchmarks/**/results/
+scripts/offline_eval/response_agent/rg_v14_live_cases.json
+*.jsonl
+
+# Local tooling configuration. (.claude/launch.json is already tracked; ignoring does not untrack it - remove it from the index later with `git rm --cached`.)
+.claude/
+
+# Excluded until authorization to publish is confirmed: original (unmodified) institutional logo and building photo
+design-references/shared/
+
+# Public repo: tracked on purpose
+!examples/synthetic_comments.xlsx
+.claude/
+.rcs_public_candidate
