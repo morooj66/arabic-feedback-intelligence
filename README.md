@@ -39,6 +39,7 @@ This is the **public engineering edition**: neutral branding and synthetic data 
 - [Roles](#roles)
 - [Analytics and reporting](#analytics-and-reporting)
 - [Tech stack](#tech-stack)
+- [Skills demonstrated](#skills-demonstrated)
 - [Model evaluation](#model-evaluation)
 - [Deployment architecture](#deployment-architecture)
 - [Screenshots](#screenshots)
@@ -314,6 +315,19 @@ Admins get a read-only analytics page, computed from fields already stored with 
 | Intended hosting | Vercel (frontend), AWS EC2 (backend + PostgreSQL in Docker) — planned |
 | Artifact storage | Private Hugging Face repository |
 | Tests | pytest, Vitest, Playwright-driven browser journeys |
+
+## Skills demonstrated
+
+- Arabic Natural Language Processing and multi-task text classification.
+- Machine learning feature engineering, transformer inference and imbalanced-class evaluation.
+- Generative AI integration with privacy, grounding and deterministic safety controls.
+- Data preparation, provenance tracking, leakage analysis and reproducible evaluation.
+- Full-stack development with React, TypeScript and a Python HTTP API.
+- API integration, PostgreSQL schema design and database migrations.
+- Docker and cloud-deployment preparation for AWS EC2 and Vercel.
+- Authentication, secure sessions, role-based access control and reviewer isolation.
+- Human-in-the-loop AI workflow design and auditable decisions.
+- Unit, integration, security and browser testing.
 
 ## Model evaluation
 
